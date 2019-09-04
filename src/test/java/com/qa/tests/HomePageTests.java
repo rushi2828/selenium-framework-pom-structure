@@ -14,6 +14,7 @@ import com.qa.util.TestUtil;
 public class HomePageTests extends TestBase {
 	HomePage homepage;
 	static String productName = "productName";
+	private static String PAGE_TITLE = "Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra";
 	private static final String MYNTRA_URL = "https://www.myntra.com/";
 
 	public HomePageTests() throws IOException {
@@ -29,27 +30,31 @@ public class HomePageTests extends TestBase {
 	/**
 	 * Verify page title.
 	 */
-	 @Test(priority=1)
+	@Test(priority = 1)
 	public void pageTitleTest() {
-//		 System.out.println("Title of the page is------>" homepage.pageTitle());
+		assertEquals(homepage.pageTitle(), PAGE_TITLE);
+		System.out.println("Title of the page is------> " + homepage.pageTitle());
 	}
 
+	/**
+	 * Verify page url.
+	 */
 	@Test(priority = 2)
 	public void urlTest() {
-		System.out.println(homepage.url());
 		assertEquals(homepage.url(), MYNTRA_URL);
+		System.out.println("Page URL is ----> " + homepage.url());
 	}
 
 	/**
 	 * Verify search option.
 	 */
-	@Test
+	@Test(priority = 3)
 	public void searchOptionTest() {
-
+		assertEquals(homepage.isSearchButtonVisible(), true);
 	}
 
 	@DataProvider
-	public static Object[][] soldOutCmeData() throws EncryptedDocumentException, IOException {
+	public static Object[][] getData() throws EncryptedDocumentException, IOException {
 		Object[][] data = TestUtil.getTextData(productName);
 		return data;
 	}
@@ -57,8 +62,10 @@ public class HomePageTests extends TestBase {
 	/**
 	 * Verify the product availability
 	 */
-	public void verifyProduct() {
-
+	@Test(priority = 4, dataProvider = "getData")
+	public void verifyProduct(String productName, String productNumber) {
+		homepage.searchProduct(productName);
+		homepage.selectProduct(productNumber);
 	}
 
 	/**
@@ -79,7 +86,7 @@ public class HomePageTests extends TestBase {
 	/**
 	 * Close browser initiates.
 	 */
-	@AfterMethod
+	// @AfterMethod
 	public void tearsDown() {
 		driver.quit();
 	}

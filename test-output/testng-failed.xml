@@ -5,9 +5,8 @@
     <classes>
       <class name="com.qa.tests.HomePageTests">
         <methods>
-          <include name="urlTest"/>
+          <include name="verifyProduct"/>
           <include name="setUp"/>
-          <include name="tearsDown"/>
         </methods>
       </class> <!-- com.qa.tests.HomePageTests -->
     </classes>

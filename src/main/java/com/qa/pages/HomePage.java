@@ -2,14 +2,18 @@ package com.qa.pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.base.TestBase;
 
 public class HomePage extends TestBase {
+	WebDriverWait wait = new WebDriverWait (driver, 15);
 	Actions action = new Actions(driver);
 
 	// Object Repository
@@ -50,6 +54,19 @@ public class HomePage extends TestBase {
 	public String pageTitle() {
 		String titleTest = driver.getTitle();
 		return titleTest;
+	}
+	
+	public boolean isSearchButtonVisible() {
+		return searchBar.isEnabled();
+	}
+	
+	public void searchProduct(String product) {
+		searchBar.sendKeys(product);
+	}
+	
+	public void selectProduct(String productNumber) {
+		WebElement prodcut = driver.findElement(By.xpath("//li["+productNumber+"]//a[1]//div[2]//h3[1]"));
+		wait.until(ExpectedConditions.visibilityOf(prodcut)).click();		
 	}
 
 	public void openProfile() {

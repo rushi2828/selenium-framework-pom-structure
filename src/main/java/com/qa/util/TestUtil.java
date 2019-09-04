@@ -23,8 +23,7 @@ public class TestUtil extends TestBase {
 	static Workbook book;
 	static Sheet sheet;
 
-	public static Object[][] getTextData(String sheetName)
-			throws EncryptedDocumentException, IOException, IllegalFormatException {
+	public static Object[][] getTextData(String sheetName)throws EncryptedDocumentException, IOException, IllegalFormatException {
 		FileInputStream file = null;
 		file = new FileInputStream(TESTDATA_SHEET_PATH);
 		book = WorkbookFactory.create(file);

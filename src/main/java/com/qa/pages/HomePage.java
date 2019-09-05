@@ -63,8 +63,10 @@ public class HomePage extends TestBase {
 		return searchBar.isEnabled();
 	}
 
-	public void searchProduct(String product){
+	public void searchProduct(String product) throws InterruptedException{
 		searchBar.sendKeys(product);
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		Robot robot = null;
 		try {
 			robot = new Robot();

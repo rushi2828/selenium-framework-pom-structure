@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.tests.HomePageTests">
         <methods>
-          <include name="verifyProduct" invocation-numbers="0"/>
+          <include name="verifyProduct"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.tests.HomePageTests -->

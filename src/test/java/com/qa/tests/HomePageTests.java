@@ -15,7 +15,7 @@ import com.qa.util.TestUtil;
 
 public class HomePageTests extends TestBase {
 	HomePage homepage;
-	static String productName = "productName";
+	static String productData = "productData";
 	private static String PAGE_TITLE = "Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra";
 	private static final String MYNTRA_URL = "https://www.myntra.com/";
 
@@ -57,24 +57,30 @@ public class HomePageTests extends TestBase {
 
 	@DataProvider
 	public static Object[][] getData() throws EncryptedDocumentException, IOException {
-		Object[][] data = TestUtil.getTextData(productName);
+		Object[][] data = TestUtil.getTextData(productData);
 		return data;
 	}
 
 	/**
 	 * Verify the product availability
+	 * 
+	 * @throws InterruptedException
 	 */
 	@Test(priority = 4, dataProvider = "getData")
-	public void verifyProduct(String productName, String productNumber) {
+	public void verifyProduct(String productName, String productNumber) throws InterruptedException {
 		homepage.searchProduct(productName);
 		homepage.selectProduct(productNumber);
 	}
 
 	/**
 	 * Add to the Wishlist. User need to login with valid credentials.
+	 * 
+	 * @throws InterruptedException
 	 */
 	@Test
-	public void newTest() {
+	public void newTest(String productName, String productNumber) throws InterruptedException {
+		homepage.searchProduct(productName);
+		homepage.selectProduct(productNumber);
 
 	}
 

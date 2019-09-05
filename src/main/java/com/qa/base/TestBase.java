@@ -27,20 +27,8 @@ public class TestBase {
 		
 		WebDriverManager.chromedriver().setup();
 		
-		// This line is for browser 
+		// Used drivermanager for  instatiating browser. 
 		driver = new ChromeDriver();
-		
-		// below code is for headless browser
-		/*ChromeOptions options = new ChromeOptions();		
-		options.addArguments("--window-size=1920,1080");
-		options.addArguments("--disable-gpu");
-		options.addArguments("--disable-extensions");
-		options.setExperimentalOptions("useAutomationExtension", false);
-		options.addArguments("--proxy-server='direct://'");
-		options.addArguments("--proxy-bypass-list=*");
-		options.addArguments("--start-maximized");
-		options.addArguments("--headless");	 
-		driver = new ChromeDriver(options);*/
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);

@@ -1,5 +1,8 @@
 package com.qa.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -13,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.qa.base.TestBase;
 
 public class HomePage extends TestBase {
-	WebDriverWait wait = new WebDriverWait (driver, 15);
+	WebDriverWait wait = new WebDriverWait(driver, 15);
 	Actions action = new Actions(driver);
 
 	// Object Repository
@@ -55,18 +58,28 @@ public class HomePage extends TestBase {
 		String titleTest = driver.getTitle();
 		return titleTest;
 	}
-	
+
 	public boolean isSearchButtonVisible() {
 		return searchBar.isEnabled();
 	}
-	
-	public void searchProduct(String product) {
+
+	public void searchProduct(String product){
 		searchBar.sendKeys(product);
+		Robot robot = null;
+		try {
+			robot = new Robot();
+		} catch (AWTException e) {
+			e.printStackTrace();
+			System.out.println(e);
+			return;
+		}
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
-	
+
 	public void selectProduct(String productNumber) {
-		WebElement prodcut = driver.findElement(By.xpath("//li["+productNumber+"]//a[1]//div[2]//h3[1]"));
-		wait.until(ExpectedConditions.visibilityOf(prodcut)).click();		
+		WebElement prodcut = driver.findElement(By.xpath("//li[" + productNumber + "]//a[1]//div[2]//h3[1]"));
+		wait.until(ExpectedConditions.visibilityOf(prodcut)).click();
 	}
 
 	public void openProfile() {

@@ -73,11 +73,10 @@ public class HomePageTests extends TestBase {
 	}
 
 	/**
-	 * Add to the Wishlist. User need to login with valid credentials.
-	 * 
+	 * Add to the Wishlist. User need to login with valid credentials. 
 	 * @throws InterruptedException
 	 */
-	@Test
+	@Test(priority=5)
 	public void newTest(String productName, String productNumber) throws InterruptedException {
 		homepage.searchProduct(productName);
 		homepage.selectProduct(productNumber);

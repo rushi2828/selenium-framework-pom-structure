@@ -27,7 +27,7 @@ public class TestBase {
 		
 		WebDriverManager.chromedriver().setup();
 		
-		// Used drivermanager for  instatiating browser. 
+		// Used drivermanager for  instantiating browser. 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

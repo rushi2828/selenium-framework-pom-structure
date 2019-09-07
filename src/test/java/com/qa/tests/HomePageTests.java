@@ -72,7 +72,7 @@ public class HomePageTests extends TestBase {
 	 * Add to the Wishlist. User need to login with valid credentials.
 	 */
 	@Test
-	public void newTest() {
+	public void addWishlistTest() {
 
 	}
 

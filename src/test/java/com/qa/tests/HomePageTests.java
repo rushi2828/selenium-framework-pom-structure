@@ -2,7 +2,6 @@ package com.qa.tests;
 
 import static org.testng.Assert.assertEquals;
 
-import java.awt.AWTException;
 import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.AfterMethod;
@@ -93,7 +92,7 @@ public class HomePageTests extends TestBase {
 	/**
 	 * Close browser initiates.
 	 */
-	// @AfterMethod
+	 @AfterMethod
 	public void tearsDown() {
 		driver.quit();
 	}

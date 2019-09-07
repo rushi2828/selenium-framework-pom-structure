@@ -5,9 +5,8 @@
     <classes>
       <class name="com.qa.tests.HomePageTests">
         <methods>
-          <include name="verifyProduct"/>
+          <include name="searchOptionTest"/>
           <include name="setUp"/>
-          <include name="newTest"/>
         </methods>
       </class> <!-- com.qa.tests.HomePageTests -->
     </classes>

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-757234013\testng-customsuite.xml</span>
+                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-2028999878\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.tests.HomePageTests" hash-for-method="newTest">newTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -116,34 +102,10 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.tests.HomePageTests" hash-for-method="verifyProduct">verifyProduct</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.tests.HomePageTests" hash-for-method="pageTitleTest">pageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.tests.HomePageTests" hash-for-method="searchOptionTest">searchOptionTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.tests.HomePageTests" hash-for-method="urlTest">urlTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -155,50 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.tests.HomePageTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="newTest">
-                  </a> <!-- newTest -->
-                  <span class="method-name">newTest</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Cannot inject @Test annotated Method [newTest] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -207,16 +125,40 @@ For more information on native dependency injection please refer to http://testn
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyProduct">
-                  </a> <!-- verifyProduct -->
-                  <span class="method-name">verifyProduct</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.IOException: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+                  <a name="searchOptionTest">
+                  </a> <!-- searchOptionTest -->
+                  <span class="method-name">searchOptionTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 381b3f8d22c43bb683da6854274d5e22
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.base.TestBase.initialisation(TestBase.java:37)
+	at com.qa.tests.HomePageTests.setUp(HomePageTests.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -234,67 +176,16 @@ For more information on native dependency injection please refer to http://testn
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.IOException: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
-	at org.apache.poi.ss.usermodel.WorkbookFactory.createWorkbook(WorkbookFactory.java:354)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.createXSSFWorkbook(WorkbookFactory.java:314)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:232)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:198)
-	at com.qa.util.TestUtil.getTextData(TestUtil.java:29)
-	at com.qa.tests.HomePageTests.getData(HomePageTests.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-	... 22 more
-Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.createWorkbook(WorkbookFactory.java:324)
-	... 34 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-skipped -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.tests.HomePageTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="pageTitleTest">
-                  </a> <!-- pageTitleTest -->
-                  <span class="method-name">pageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchOptionTest">
-                  </a> <!-- searchOptionTest -->
-                  <span class="method-name">searchOptionTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="urlTest">
-                  </a> <!-- urlTest -->
-                  <span class="method-name">urlTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-757234013\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-2028999878\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -303,7 +194,11 @@ Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFW
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.tests.HomePageTests&quot;/&gt;
+      &lt;class name=&quot;com.qa.tests.HomePageTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchOptionTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.HomePageTests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -343,32 +238,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchOptionTest')
 data.setCell(0, 2, 'com.qa.tests.HomePageTests')
-data.setCell(0, 3, 847);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'pageTitleTest')
-data.setCell(1, 2, 'com.qa.tests.HomePageTests')
-data.setCell(1, 3, 47);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'urlTest')
-data.setCell(2, 2, 'com.qa.tests.HomePageTests')
-data.setCell(2, 3, 33);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'newTest')
-data.setCell(3, 2, 'com.qa.tests.HomePageTests')
-data.setCell(3, 3, 0);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyProduct')
-data.setCell(4, 2, 'com.qa.tests.HomePageTests')
-data.setCell(4, 3, 0);
+data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 927 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -383,9 +262,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.tests.HomePageTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyProduct</span>
+                <br/>
+                <span class="ignored-method-name">urlTest</span>
+                <br/>
+                <span class="ignored-method-name">pageTitleTest</span>
+                <br/>
+                <span class="ignored-method-name">newTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -395,30 +287,16 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.HomePageTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchOptionTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pageTitleTest</span>
-                <span class="method-start">31209 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">31262 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">urlTest</span>
-                <span class="method-start">43806 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">43842 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchOptionTest</span>
-                <span class="method-start">60426 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

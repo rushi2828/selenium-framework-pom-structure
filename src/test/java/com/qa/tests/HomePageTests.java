@@ -13,7 +13,7 @@ import com.qa.util.TestUtil;
 
 public class HomePageTests extends TestBase {
 	HomePage homepage;
-	static String productName = "productName";
+	static String productData = "productData";
 	private static String PAGE_TITLE = "Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra";
 	private static final String MYNTRA_URL = "https://www.myntra.com/";
 
@@ -55,7 +55,7 @@ public class HomePageTests extends TestBase {
 
 	@DataProvider
 	public static Object[][] getData() throws EncryptedDocumentException, IOException {
-		Object[][] data = TestUtil.getTextData(productName);
+		Object[][] data = TestUtil.getTextData(productData);
 		return data;
 	}
 
@@ -86,7 +86,7 @@ public class HomePageTests extends TestBase {
 	/**
 	 * Close browser initiates.
 	 */
-	// @AfterMethod
+	 @AfterMethod
 	public void tearsDown() {
 		driver.quit();
 	}
